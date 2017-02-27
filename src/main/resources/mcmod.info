@@ -1,0 +1,16 @@
+[
+{
+  "modid": "igi|toughasnails",
+  "name": "InGameInfoXML Tough As Nails",
+  "description": "Adds tags for Tough As Nails",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["smbarbour"],
+  "credits": "Lunatrius for InGameInfoXML",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
