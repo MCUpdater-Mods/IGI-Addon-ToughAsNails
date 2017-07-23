@@ -28,7 +28,7 @@ public class IGIToughAsNails
 			return;
 		}
 		// Register tags
-		if (Loader.isModLoaded("ToughAsNails")) {
+		if (Loader.isModLoaded("toughasnails")) {
 			TagTAN.register();
 		}
 	}

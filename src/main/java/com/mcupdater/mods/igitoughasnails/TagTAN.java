@@ -6,7 +6,7 @@ import net.minecraft.client.resources.I18n;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import toughasnails.api.TANCapabilities;
 import toughasnails.api.season.ISeasonData;
-import toughasnails.handler.season.SeasonHandler;
+import toughasnails.api.season.SeasonHelper;
 import toughasnails.temperature.TemperatureDebugger;
 import toughasnails.temperature.TemperatureHandler;
 
@@ -50,7 +50,7 @@ public abstract class TagTAN extends Tag
 		@Override
 		public String getValue() {
 			try {
-				ISeasonData seasonData = SeasonHandler.getClientSeasonData();
+				ISeasonData seasonData = SeasonHelper.getSeasonData(world);
 				return getSeasonName(seasonData.getSubSeason());
 			} catch (Throwable e) {
 				log(this, e);
