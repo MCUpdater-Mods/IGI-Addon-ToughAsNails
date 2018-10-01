@@ -1,0 +1,18 @@
+ingameinfoxml.tag.category.toughasnails.name=Tough As Nails
+ingameinfoxml.tag.category.sereneseasons.name=Serene Seasons
+ingameinfoxml.tag.tancurrtemp.desc=Текущая температура
+ingameinfoxml.tag.tantargettemp.desc=Целевая температура
+ingameinfoxml.tag.tanseason.desc=Текущий сезон
+
+toughasnails.subseason.earlyspring.desc=Ранняя весна
+toughasnails.subseason.midspring.desc=Середина весны
+toughasnails.subseason.latespring.desc=Поздняя весна
+toughasnails.subseason.earlysummer.desc=Раннее лето
+toughasnails.subseason.midsummer.desc=Середина лета
+toughasnails.subseason.latesummer.desc=Позднее лето
+toughasnails.subseason.earlyautumn.desc=Ранняя осень
+toughasnails.subseason.midautumn.desc=Середина осени
+toughasnails.subseason.lateautumn.desc=Поздняя осень
+toughasnails.subseason.earlywinter.desc=Ранняя зима
+toughasnails.subseason.midwinter.desc=Середина зимы
+toughasnails.subseason.latewinter.desc=Поздняя зима
