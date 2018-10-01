@@ -2,11 +2,8 @@ package com.mcupdater.mods.igitoughasnails;
 
 import com.github.lunatrius.ingameinfo.tag.Tag;
 import com.github.lunatrius.ingameinfo.tag.registry.TagRegistry;
-import net.minecraft.client.resources.I18n;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import toughasnails.api.TANCapabilities;
-import toughasnails.api.season.ISeasonData;
-import toughasnails.api.season.SeasonHelper;
 import toughasnails.temperature.TemperatureDebugger;
 import toughasnails.temperature.TemperatureHandler;
 
@@ -46,27 +43,9 @@ public abstract class TagTAN extends Tag
 		}
 	}
 
-	public static class Season extends TagTAN {
-		@Override
-		public String getValue() {
-			try {
-				ISeasonData seasonData = SeasonHelper.getSeasonData(world);
-				return getSeasonName(seasonData.getSubSeason());
-			} catch (Throwable e) {
-				log(this, e);
-			}
-			return "Unknown";
-		}
-
-		private String getSeasonName(toughasnails.api.season.Season.SubSeason season) {
-			return I18n.format("toughasnails.subseason." + season.name().replace("_","").toLowerCase() + ".desc");
-		}
-	}
-
 	static void register() {
 		TagRegistry.INSTANCE.register(new TagTAN.CurrentTemp().setName("tancurrtemp"));
 		TagRegistry.INSTANCE.register(new TagTAN.TargetTemp().setName("tantargettemp"));
-		TagRegistry.INSTANCE.register(new TagTAN.Season().setName("tanseason"));
 	}
 
 	void log(Tag tag, Throwable ex) {

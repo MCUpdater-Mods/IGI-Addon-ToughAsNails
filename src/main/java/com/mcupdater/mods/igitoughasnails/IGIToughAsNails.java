@@ -31,6 +31,9 @@ public class IGIToughAsNails
 		if (Loader.isModLoaded("toughasnails")) {
 			TagTAN.register();
 		}
+		if (Loader.isModLoaded("sereneseasons")) {
+			TagSS.register();
+		}
 	}
 
 	@NetworkCheckHandler
